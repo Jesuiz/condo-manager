@@ -17,6 +17,11 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->enum('doc_type', ['DNI', 'CE', 'PTP', 'Otro'])->default('DNI');
+            $table->string('document')->unique();
+            $table->mediumText('address');
+            $table->unsignedBigInteger('cellphone');
+            $table->boolean('is_active')->nullable()->default(true);
             $table->rememberToken();
             $table->timestamps();
         });

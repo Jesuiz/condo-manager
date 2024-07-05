@@ -5,11 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Condo Manager') }}</title>
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link href="{{ asset('css/fonts.poppins.min.css') }}" rel="stylesheet">
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -28,9 +27,23 @@
             @endisset
 
             <!-- Page Content -->
-            <main>
+            <main class="pb-16">
                 {{ $slot }}
             </main>
-        </div>
+        </div>  
+
     </body>
+    <footer class="relative pt-8 pb-6 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-6/12 px-4 mx-auto text-center">
+                    <div class="text-[12px] text-blueGray-500 font-semibold py-1">
+                        Made with ♥ by
+                        <a href="https://jesus-portfolio.vercel.app/" class="text-blueGray-500 hover:text-white" target="_blank">Jesús Ruiz</a>
+                        <p>Desarrollando Aplicaciones Web de Perú para el mundo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </html>
