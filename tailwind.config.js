@@ -1,13 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
-import {
-    sky,
-    stone,
-    neutral,
-    gray,
-    slate,
-    restColors
-} from 'tailwindcss/colors';
+import colors from 'tailwindcss/colors';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -21,19 +14,29 @@ export default {
 
     theme: {
         colors: {
-            restColors,
-            sky,
-            stone,
-            neutral,
-            gray,
-            slate,
+            transparent: 'transparent',
+            current: 'currentColor',
+            black: colors.black,
+            white: colors.white,
+            gray: colors.gray,
+            red: colors.red,
+            yellow: colors.yellow,
+            green: colors.green,
+            blue: colors.blue,
+            indigo: colors.indigo,
+            purple: colors.purple,
+            pink: colors.pink,
+            sky: colors.sky,
+            stone: colors.stone,
+            neutral: colors.neutral,
+            slate: colors.slate,
         },
         extend: {
             scale: {
-                '120': '1.2',
-                '125': '1.25',
-                '130': '1.3',
-                '140': '1.4',
+              '120': '1.2',
+              '125': '1.25',
+              '130': '1.3',
+              '140': '1.4',
             },
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],
@@ -41,6 +44,7 @@ export default {
             fontSize: {
                 'xs': '0.70rem',
             },
+            
         },
     },
 

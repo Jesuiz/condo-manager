@@ -37,7 +37,7 @@
                             Ir a Whatsapp
                         </a>
 
-                        <div class="text-sm font-medium text-left text-gray-700 2xl:ml-2">
+                        <div class="text-sm font-medium text-left text-w-700 2xl:ml-2">
                             <p class="text-xs">¿Tienes alguna sugerencia?</p>
                             <a href="mailto:jesuizmail@gmail.com"
                                 class="cursor-pointer transition-all duration-150 hover:font-bold">Enviar correo
