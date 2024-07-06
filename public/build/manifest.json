@@ -9,11 +9,5 @@
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
-  },
-  "tailwind.config.js": {
-    "file": "assets/tailwind.config-BbmscZSg.js",
-    "name": "tailwind.config",
-    "src": "tailwind.config.js",
-    "isEntry": true
   }
 }
