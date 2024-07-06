@@ -49,7 +49,7 @@
                 S/{{ number_format($condominium->expenses, 2, '.', ',') }}
             </td>
             <td
-                class="flex flex-row items-center border-t-0 px-5 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                class="align-middleborder-t-0 px-5 border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                 @php
                 $utility = $condominium->utility;
                 $isPositive = $utility >= 0;
@@ -57,13 +57,13 @@
                 @endphp
 
                 @if($isPositive)
-                <span class="inline-flex flex-shrink-0 align-middle items-center rounded-full bg-emerald-50 px-1.5 py-0.5 text-xs font-medium text-emerald-600 ring-1 ring-inset ring-emerald-600">
+                <span class="inline-flex flex-shrink-0 align-middle items-center rounded-full bg-green-25 px-1.5 py-0.5 text-xs font-medium text-green-600 ring-1 ring-inset ring-green-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="green" class="w-4 h-4 mr-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>
                     S/{{ number_format($absoluteValue, 2, '.', ',') }}</span>
 
                 @elseif(!$isPositive)
-                <span class="inline-flex flex-shrink-0 align-middle items-center rounded-full bg-red-50 px-1.5 py-0.5 text-xs font-medium text-red-600 ring-1 ring-inset ring-red-600">
+                <span class="inline-flex flex-shrink-0 align-middle items-center rounded-full bg-red-25 px-1.5 py-0.5 text-xs font-medium text-red-600 ring-1 ring-inset ring-red-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-4 h-4 mr-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 0 1 4.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181" /></svg>
                     S/{{ number_format($absoluteValue, 2, '.', ',') }}</span>

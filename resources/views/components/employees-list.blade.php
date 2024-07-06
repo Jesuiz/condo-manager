@@ -60,7 +60,7 @@
 
             @elseif($user->area == 'jardinería')
             <td class="border-t-0 align-middle items-center border-l-0 border-r-0 text-xs whitespace-wrap p-4"><span
-                    class="inline-flex flex-shrink-0 align-middle items-end rounded-full bg-emerald-50 px-2 py-0.5 text-xs font-medium text-emerald-600 ring-1 ring-inset ring-emerald-600">
+                    class="inline-flex flex-shrink-0 align-middle items-end rounded-full bg-green-50 px-2 py-0.5 text-xs font-medium text-green-600 ring-1 ring-inset ring-green-600">
                     {{ ucfirst($user->area) }}</span></td>
 
             @elseif($user->area == 'delegado')

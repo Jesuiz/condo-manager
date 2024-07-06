@@ -21,6 +21,7 @@ export default {
             gray: colors.gray,
             red: colors.red,
             yellow: colors.yellow,
+            orange: colors.orange,
             green: colors.green,
             blue: colors.blue,
             indigo: colors.indigo,

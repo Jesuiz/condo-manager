@@ -24,7 +24,7 @@
                             class="inline-flex flex-shrink-0 items-center rounded-full bg-yellow-50 px-1.5 py-0.5 text-xs font-medium text-yellow-600 ring-1 ring-inset ring-yellow-600">{{ ucfirst($user->area) }}</span>
                         @elseif($user->area == 'jardinería')
                         <span
-                            class="inline-flex flex-shrink-0 items-center rounded-full bg-emerald-50 px-1.5 py-0.5 text-xs font-medium text-emerald-600 ring-1 ring-inset ring-emerald-600">{{ ucfirst($user->area) }}</span>
+                            class="inline-flex flex-shrink-0 items-center rounded-full bg-green-50 px-1.5 py-0.5 text-xs font-medium text-green-600 ring-1 ring-inset ring-green-600">{{ ucfirst($user->area) }}</span>
                         @elseif($user->area == 'delegado')
                         <span
                             class="inline-flex flex-shrink-0 items-center rounded-full bg-purple-50 px-1.5 py-0.5 text-xs font-medium text-purple-600 ring-1 ring-inset ring-purple-600">{{ ucfirst($user->area) }}</span>

@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-B7KI20_g.css",
+    "file": "assets/app-CTK3wS96.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -8,6 +8,12 @@
     "file": "assets/app-Cs0QkU1O.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "tailwind.config.js": {
+    "file": "assets/tailwind.config-BbmscZSg.js",
+    "name": "tailwind.config",
+    "src": "tailwind.config.js",
     "isEntry": true
   }
 }
