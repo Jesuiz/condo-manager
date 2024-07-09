@@ -10,12 +10,8 @@
         <!-- Fonts -->
         <link href="{{ asset('css/fonts.poppins.min.css') }}" rel="stylesheet">
 
-        <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-          @livewireStyles
-      
-          <!-- Scripts -->
-          <script src="{{ asset('js/app.js') }}" defer></script>
+            <script src="{{ asset('js/app.js') }}" defer></script>
 
     </head>
     <body class="font-sans antialiased">
